@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<a href="{% url 'home' %}">Home</a>
+<h1>Total Number Of Words Are {{word_count}}</h1>
+<p>{{article}}</p>
+<br/>
+<br/>
+<h1>List View</h1>
+{% for word,num in dist_word %}
+<h1>{{word}} : {{num}}</h1>
+{% endfor %}
+</body>
+</html>
