@@ -6,7 +6,7 @@
 </head>
 <body>
 <a href="{% url 'results' %}">Results</a>
-<h1>This is the Home Page {{var1}}</h1>
+<h1>This is the New Home Page {{var1}}</h1>
 <form action="{% url 'results' %}"">
 {% csrf_token %}
 <textarea cols="120" rows="20" name="article"></textarea>
